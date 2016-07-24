@@ -1,0 +1,32 @@
+
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    >
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <View
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bottom_layout_selector"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"/>
+
+    <View
+        android:id="@+id/cursor_view"
+        android:layout_marginTop="3dp"
+        android:background="#ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"/>
+
+    <ImageView
+        android:visibility="gone"
+        android:id="@+id/logo_image"
+        android:scaleType="centerCrop"
+        android:layout_margin="15dp"
+        android:layout_width="64dp"
+        android:layout_height="64dp" />
+
+</merge>

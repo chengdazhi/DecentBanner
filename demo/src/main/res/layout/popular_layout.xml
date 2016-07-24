@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <ImageView
+        android:src="@drawable/popular_image"
+        android:scaleType="centerCrop"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <View
+        android:background="#55000000"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <TextView
+        android:text="第25期"
+        android:textColor="#ffffff"
+        android:id="@+id/column_textview"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:text="TOP 10"
+        android:textSize="20sp"
+        android:textColor="#ffffff"
+        android:id="@+id/top_textview"
+        android:layout_alignLeft="@id/column_textview"
+        android:layout_below="@id/column_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:text="美国黑人强烈抗议活动升级\n苹果iOS10上手完整攻略\n九种特征降低异性吸引力"
+        android:textSize="10sp"
+        android:lineSpacingExtra="2dp"
+        android:layout_marginTop="7dp"
+        android:layout_below="@id/top_textview"
+        android:layout_alignLeft="@id/top_textview"
+        android:textColor="#ffffff"
+        android:id="@+id/item_title_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>
