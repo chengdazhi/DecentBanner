@@ -279,12 +279,12 @@ public class DecentBanner extends RelativeLayout {
 
         @Override
         public void startScroll(int startX, int startY, int dx, int dy, int duration) {
-            super.startScroll(startX, startY, dx, dy, duration);
+            super.startScroll(startX, startY, dx, dy, this.duration);
         }
 
         @Override
         public void startScroll(int startX, int startY, int dx, int dy) {
-            super.startScroll(startX, startY, dx, dy, duration);
+            super.startScroll(startX, startY, dx, dy, this.duration);
         }
     }
 
