@@ -8,8 +8,6 @@ To try out the sample, download the apk from [chengdazhi.com/decentbanner](cheng
 
 ## Features
 
-----
-
 * Smooth buoy movement animation and title opacity animation.
 
 * You can choose to enable logo at the top left corner.
@@ -23,8 +21,6 @@ To try out the sample, download the apk from [chengdazhi.com/decentbanner](cheng
 * Infinite loop.
 
 ## Import
-
-----
 
 Maven
 
@@ -42,8 +38,6 @@ Gradle
     }
 
 ## Usage
-
-----
 
 * To initiate your DecentBanner, first acquire DecentBanner instance mDecentBanner in Java or XML, then:
 
@@ -66,8 +60,6 @@ Gradle
         mDecentBanner.stopAutoPlay();
 
 ## License
-
-----
 
     Copyright 2016 chengdazhi
 
