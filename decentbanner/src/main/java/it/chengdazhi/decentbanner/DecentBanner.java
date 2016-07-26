@@ -60,12 +60,12 @@ public class DecentBanner extends RelativeLayout {
         }
     };
 
-    private void startAutoPlay() {
+    public void startAutoPlay() {
         stopAutoPlay();
         handler.sendEmptyMessageDelayed(MESSAGE_SCROLL, homeColumnScrollInterval * 1000);
     }
 
-    private void stopAutoPlay() {
+    public void stopAutoPlay() {
         handler.removeMessages(MESSAGE_SCROLL);
     }
 
@@ -234,7 +234,7 @@ public class DecentBanner extends RelativeLayout {
         cursor.setLayoutParams(layoutParams);
     }
 
-    public void initTabsAndCursorLayout() {
+    private void initTabsAndCursorLayout() {
         int windowWidth = this.getMeasuredWidth();
         int windowHeight = this.getMeasuredHeight();
         int cursorLeft = 0;
