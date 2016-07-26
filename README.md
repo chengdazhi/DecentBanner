@@ -1,6 +1,6 @@
 # DecentBanner
 
-![Sample_GIF]()
+![Sample_GIF](http://7xpg2f.com1.z0.glb.clouddn.com/banner_sample_gif.gif)
 
 To try out the sample, download the apk from [chengdazhi.com/decentbanner](chengdazhi.com/decentbanner) or scan the following QR code:
 
@@ -34,7 +34,7 @@ Maven
 Gradle
 
     dependencies {
-        compile 'it.chengdazhi.decentbanner:decentbanner:1.0.3'
+        compile 'it.chengdazhi.decentbanner:decentbanner:1.0.4'
     }
 
 ## Usage
