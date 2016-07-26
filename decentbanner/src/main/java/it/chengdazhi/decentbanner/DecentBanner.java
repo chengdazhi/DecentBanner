@@ -40,6 +40,7 @@ public class DecentBanner extends RelativeLayout {
     private static final int MESSAGE_SCROLL = 123;
     private int homeColumnScrollInterval = 4;
     private int tabNum = 0;
+    private int viewNum = 0;
     private static final int ITEM_MAX_NUM = 200000;
     private static final int CURSOR_HEIGHT_DP = 2;
     private int animationDuration = 300;
@@ -107,9 +108,6 @@ public class DecentBanner extends RelativeLayout {
     }
 
     private void init(List<View> views, final List<String> titleStrings, int interval, int animationDuration, Bitmap logoBitmap) {
-        if (views.size() != titleStrings.size()) {
-            throw new IllegalArgumentException("the number of views must match the number of strings");
-        }
         inflate(getContext(), R.layout.decent_banner_layout, this);
         cursor = findViewById(R.id.cursor_view);
         logo = (ImageView) findViewById(R.id.logo_image);
@@ -125,7 +123,8 @@ public class DecentBanner extends RelativeLayout {
         this.homeColumnScrollInterval = interval;
         this.animationDuration = animationDuration;
 
-        tabNum = views.size();
+        viewNum = views.size();
+        tabNum = titleStrings.size();
 
         titles = new ArrayList<>(tabNum);
         for (String titleString : titleStrings) {
@@ -147,7 +146,7 @@ public class DecentBanner extends RelativeLayout {
 
         decentBannerAdapter = new DecentBannerAdapter(ITEM_MAX_NUM, views);
         viewPager.setAdapter(decentBannerAdapter);
-        int index = ITEM_MAX_NUM / 2 - ITEM_MAX_NUM / 2 % tabNum;
+        int index = ITEM_MAX_NUM / 2 - ITEM_MAX_NUM / 2 % viewNum;
         viewPager.setCurrentItem(index);
 
         try {
@@ -218,7 +217,7 @@ public class DecentBanner extends RelativeLayout {
                     cursorRight = startTextView.getRight() - (int) (startTextView.getWidth() * (1 - positionOffSet) * 1.5);
                 }
                 startTextView.setTextColor(Color.argb((int) (255 * (positionOffSet * 0.5 + 0.5)), 255, 255, 255));
-                endTextView.setTextColor(Color.argb(127, 255, 255, 255));
+                endTextView.setTextColor(Color.argb((int) (255 * (1 - positionOffSet * 0.5)), 255, 255, 255));
             } else {
                 TextView startTextView = titles.get(i);
                 TextView endTextView = titles.get(i + 1);

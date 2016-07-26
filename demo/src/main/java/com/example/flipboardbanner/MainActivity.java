@@ -35,9 +35,9 @@ public class MainActivity extends AppCompatActivity {
         views.add(view3);
 
         titles = new ArrayList<>();
-        titles.add("popular");
-        titles.add("daily");
-        titles.add("recommend");
+        titles.add("全球热点");
+        titles.add("图说今日");
+        titles.add("推荐");
         decentBanner.start(views, titles, 2, 500, R.drawable.logo);
     }
 }
