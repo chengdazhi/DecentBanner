@@ -38,6 +38,6 @@ public class MainActivity extends AppCompatActivity {
         titles.add("popular");
         titles.add("daily");
         titles.add("recommend");
-        decentBanner.start(views, titles, 4, 300, R.drawable.logo);
+        decentBanner.start(views, titles, 2, 500, R.drawable.logo);
     }
 }

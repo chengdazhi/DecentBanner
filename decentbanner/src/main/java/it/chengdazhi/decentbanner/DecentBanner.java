@@ -53,7 +53,7 @@ public class DecentBanner extends RelativeLayout {
             if (msg.what == MESSAGE_SCROLL) {
                 if(viewPager != null) {
                     viewPager.setCurrentItem(viewPager.getCurrentItem() + 1);
-                    handler.sendEmptyMessageDelayed(MESSAGE_SCROLL, homeColumnScrollInterval * 1000);
+                    startAutoPlay();
                 }
             }
         }
