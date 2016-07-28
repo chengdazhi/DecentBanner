@@ -1,7 +1,3 @@
-/*
- * Copyright (c) 2016 Flipboard, Inc. All Rights Reserved.
- */
-
 package it.chengdazhi.decentbanner;
 
 import android.support.v4.view.PagerAdapter;

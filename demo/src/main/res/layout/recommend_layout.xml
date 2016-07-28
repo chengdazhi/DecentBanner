@@ -15,7 +15,7 @@
         android:layout_height="match_parent" />
 
     <TextView
-        android:text="北上广玩乐指南！"
+        android:text="yes to all travelers!"
         android:textColor="#ffffff"
         android:layout_alignParentBottom="true"
         android:layout_marginBottom="60dp"
@@ -27,7 +27,7 @@
 
     <TextView
         android:textSize="24sp"
-        android:text="三城记"
+        android:text="Tale of the City"
         android:id="@+id/recommend_big_text"
         android:textColor="#ffffff"
         android:layout_marginTop="90dp"
@@ -36,7 +36,7 @@
         android:layout_height="wrap_content" />
 
     <TextView
-        android:text="出自 Flipboard专题"
+        android:text="From World Times"
         android:layout_below="@id/recommend_big_text"
         android:textSize="12sp"
         android:textColor="#ffffff"

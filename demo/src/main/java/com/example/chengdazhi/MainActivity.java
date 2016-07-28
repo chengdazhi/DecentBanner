@@ -1,4 +1,4 @@
-package com.example.flipboardbanner;
+package com.example.chengdazhi;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -35,9 +35,9 @@ public class MainActivity extends AppCompatActivity {
         views.add(view3);
 
         titles = new ArrayList<>();
-        titles.add("全球热点");
-        titles.add("图说今日");
-        titles.add("推荐");
+        titles.add("POPULAR");
+        titles.add("IMAGE");
+        titles.add("RECOMMEND");
         decentBanner.start(views, titles, 2, 500, R.drawable.logo);
     }
 }
