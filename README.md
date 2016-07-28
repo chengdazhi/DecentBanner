@@ -1,6 +1,6 @@
 # DecentBanner
 
-![sample](./images/banner_50.gif)
+![sample](./images/decent_sample.gif)
 
 To try out the sample, download the apk from [chengdazhi.com/decentbanner](chengdazhi.com/decentbanner) or scan the following QR code:
 
