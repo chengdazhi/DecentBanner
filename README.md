@@ -4,7 +4,7 @@
 
 To try out the sample, download the apk from [chengdazhi.com/decentbanner](chengdazhi.com/decentbanner) or scan the following QR code:
 
-![qrcode](./images/qr.png)
+![qrcode](./images/decent_qr.png)
 
 ## Features
 
