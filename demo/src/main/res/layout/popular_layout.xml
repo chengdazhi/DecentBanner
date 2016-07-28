@@ -14,7 +14,7 @@
         android:layout_height="match_parent" />
 
     <TextView
-        android:text="第25期"
+        android:text="No.25"
         android:textColor="#ffffff"
         android:id="@+id/column_textview"
         android:layout_marginTop="100dp"
@@ -33,7 +33,7 @@
         android:layout_height="wrap_content" />
 
     <TextView
-        android:text="美国黑人强烈抗议活动升级\n苹果iOS10上手完整攻略\n九种特征降低异性吸引力"
+        android:text="Government bringing out new regulations against\nthe Chinese company Huawei\nfor their routers and cellphones"
         android:textSize="10sp"
         android:lineSpacingExtra="2dp"
         android:layout_marginTop="7dp"

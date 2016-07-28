@@ -21,7 +21,7 @@ android {
 }
 
 group = 'it.chengdazhi.decentbanner'
-version = '1.0.4'
+version = '1.0.5'
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
@@ -62,10 +62,10 @@ bintray {
         name = 'it.chengdazhi.decentbanner'
 
         version {
-            name = '1.0.4-tuts'
+            name = '1.0.5-tuts'
             desc = "decent banner"
             released = new Date()
-            vcsTag = '1.0.4'
+            vcsTag = '1.0.5'
         }
 
     }

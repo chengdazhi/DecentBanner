@@ -16,7 +16,7 @@
 
     <TextView
         android:id="@+id/image_num_textview"
-        android:text="15张图片"
+        android:text="15 Images"
         android:layout_centerHorizontal="true"
         android:layout_alignParentBottom="true"
         android:layout_marginBottom="50dp"
@@ -27,7 +27,7 @@
 
     <TextView
         android:textSize="24sp"
-        android:text="星空之美"
+        android:text="The Beauty of Stars"
         android:textColor="#ffffff"
         android:layout_above="@id/image_num_textview"
         android:layout_centerHorizontal="true"

@@ -1,7 +1,3 @@
-/*
- * Copyright (c) 2016 Flipboard, Inc. All Rights Reserved.
- */
-
 package it.chengdazhi.decentbanner;
 
 import android.content.Context;
@@ -21,8 +17,6 @@ import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.Scroller;
 import android.widget.TextView;
-
-import com.example.decentbanner.R;
 
 import java.lang.reflect.Field;
 import java.util.ArrayList;
