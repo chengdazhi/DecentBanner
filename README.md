@@ -34,7 +34,7 @@ Maven
 Gradle
 
     dependencies {
-        compile 'it.chengdazhi.decentbanner:decentbanner:1.0.4'
+        compile 'it.chengdazhi.decentbanner:decentbanner:1.0.5'
     }
 
 ## Usage
