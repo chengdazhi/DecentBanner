@@ -1,10 +1,10 @@
 # DecentBanner
 
-![sample](http://7xpg2f.com1.z0.glb.clouddn.com/banner_50.gif)
+![sample](./images/banner_50.gif)
 
 To try out the sample, download the apk from [chengdazhi.com/decentbanner](chengdazhi.com/decentbanner) or scan the following QR code:
 
-![qrcode](http://7xpg2f.com1.z0.glb.clouddn.com/decent_banner_apk_qr.png)
+![qrcode](./images/qr.png)
 
 ## Features
 
