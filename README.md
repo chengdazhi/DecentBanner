@@ -2,7 +2,7 @@
 
 ![sample](./images/decent_sample.gif)
 
-To try out the sample, download the apk from [chengdazhi.com/decentbanner](chengdazhi.com/decentbanner) or scan the following QR code:
+To try out the sample, download the apk from [http://chengdazhi.com/decentbanner](chengdazhi.com/decentbanner) or scan the following QR code:
 
 ![qrcode](./images/decent_qr.png)
 
