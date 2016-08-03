@@ -21,7 +21,7 @@ android {
 }
 
 group = 'it.chengdazhi.decentbanner'
-version = '1.0.5'
+version = '1.0.6'
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
@@ -62,12 +62,15 @@ bintray {
         name = 'it.chengdazhi.decentbanner'
 
         version {
-            name = '1.0.5-tuts'
+            name = '1.0.6-tuts'
             desc = "decent banner"
             released = new Date()
-            vcsTag = '1.0.5'
+            vcsTag = '1.0.6'
         }
 
+        licenses = ['Apache-2.0']
+        vcsUrl = 'https://github.com/chengdazhi/DecentBanner.git'
+        websiteUrl = 'https://github.com/chengdazhi/DecentBanner'
     }
 
     configurations = ['archives']
