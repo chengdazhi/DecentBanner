@@ -39,7 +39,6 @@ public class DecentBanner extends RelativeLayout {
     private static final int CURSOR_HEIGHT_DP = 2;
     private int animationDuration = 300;
 
-    private Context context;
     private List<TextView> titles;
 
     private Handler handler = new Handler() {
@@ -65,17 +64,14 @@ public class DecentBanner extends RelativeLayout {
 
     public DecentBanner(Context context) {
         super(context);
-        this.context = context;
     }
 
     public DecentBanner(Context context, AttributeSet attrs) {
         super(context, attrs);
-        this.context = context;
     }
 
     public DecentBanner(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
-        this.context = context;
     }
 
     public void start(List<View> views, List<String> titles, int interval, int animationDuration) {
