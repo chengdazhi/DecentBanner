@@ -1,5 +1,7 @@
 # DecentBanner
 
+[![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-MaterialEditText-brightgreen.svg?style=flat)](https://android-arsenal.com/details/1/3985)
+
 ![sample](./images/decent_sample.gif)
 
 To try out the sample, download the apk from [chengdazhi.com/decentbanner](http://chengdazhi.com/decentbanner) or scan the following QR code:
