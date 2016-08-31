@@ -9,6 +9,7 @@
         android:layout_height="match_parent"/>
 
     <View
+        android:id="@+id/gradient_cover"
         android:layout_alignParentBottom="true"
         android:background="@drawable/bottom_layout_selector"
         android:layout_width="match_parent"

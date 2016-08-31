@@ -27,14 +27,14 @@ Maven
     <dependency>
       <groupId>it.chengdazhi.decentbanner</groupId>
       <artifactId>decentbanner</artifactId>
-      <version>1.0.3</version>
+      <version>1.0.7</version>
       <type>pom</type>
     </dependency>
 
 Gradle
 
     dependencies {
-        compile 'it.chengdazhi.decentbanner:decentbanner:1.0.4'
+        compile 'it.chengdazhi.decentbanner:decentbanner:1.0.7'
     }
 
 ## Usage

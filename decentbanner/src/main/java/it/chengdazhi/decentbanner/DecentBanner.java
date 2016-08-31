@@ -29,6 +29,7 @@ public class DecentBanner extends RelativeLayout {
     View cursor;
     ImageView logo;
     ViewPager viewPager;
+    View gradientCover;
     private DecentBannerAdapter decentBannerAdapter;
 
     private static final int MESSAGE_SCROLL = 123;
@@ -38,6 +39,7 @@ public class DecentBanner extends RelativeLayout {
     private static final int ITEM_MAX_NUM = 200000;
     private static final int CURSOR_HEIGHT_DP = 2;
     private int animationDuration = 300;
+    private boolean enableGradient = true;
 
     private List<TextView> titles;
 
@@ -86,13 +88,27 @@ public class DecentBanner extends RelativeLayout {
         init(views, titles, interval, animationDuration, logo);
     }
 
+    public void setGradientEnabled(boolean enabled) {
+        this.enableGradient = enabled;
+        if (gradientCover != null) {
+            if (enabled) {
+                gradientCover.setVisibility(VISIBLE);
+            } else {
+                gradientCover.setVisibility(GONE);
+            }
+        }
+    }
+
+    public boolean isGradientEnabled() {
+        return enableGradient;
+    }
+
     private void init(List<View> views, final List<String> titleStrings, int interval, int animationDuration, int logoResourceId) {
         Bitmap logoBitmap;
         if (logoResourceId > 0) {
             logoBitmap = BitmapFactory.decodeResource(getResources(), logoResourceId);
         } else {
             logoBitmap = null;
-
         }
         init(views, titleStrings, interval, animationDuration, logoBitmap);
     }
@@ -102,6 +118,13 @@ public class DecentBanner extends RelativeLayout {
         cursor = findViewById(R.id.cursor_view);
         logo = (ImageView) findViewById(R.id.logo_image);
         viewPager = (ViewPager) findViewById(R.id.viewpager);
+        gradientCover = findViewById(R.id.gradient_cover);
+
+        if (enableGradient) {
+            gradientCover.setVisibility(VISIBLE);
+        } else {
+            gradientCover.setVisibility(GONE);
+        }
 
         if (logoBitmap != null) {
             logo.setVisibility(VISIBLE);
