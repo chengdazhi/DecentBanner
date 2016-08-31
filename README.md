@@ -1,10 +1,12 @@
 # DecentBanner
 
-![sample](./images/banner_50.gif)
+[![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-DecentBanner-brightgreen.svg?style=flat)](https://android-arsenal.com/details/1/3985)
 
-To try out the sample, download the apk from [chengdazhi.com/decentbanner](chengdazhi.com/decentbanner) or scan the following QR code:
+![sample](./images/decent_sample.gif)
 
-![qrcode](./images/qr.png)
+To try out the sample, download the apk from [chengdazhi.com/decentbanner](http://chengdazhi.com/decentbanner) or scan the following QR code:
+
+![qrcode](./images/decent_qr.png)
 
 ## Features
 
@@ -41,23 +43,31 @@ Gradle
 
 * To initiate your DecentBanner, first acquire DecentBanner instance mDecentBanner in Java or XML, then:
 
-        /**
-        * @param views the list of views that you want to include in the banner
-        * @param titles the list of titles that appears as tabs at the bottom
-        * @param intervalSeconds the interval of auto scrolling, set to 2 in sample
-        * @param animationMillis the scrolling's animation time, set to 500 in sample
-        * @param int logoResourceId | Bitmap logoBitmap the logo you want to display.
-                You can skip this param if you don't want it.
-        */
-        mDecentBanner.start(List<View> views, List<String> titles, int intervalSeconds,
-                int animationMillis[, int logoResourceId | Bitmap logoBitmap]);
+```java
+/**
+* @param views the list of views that you want to include in the banner
+* @param titles the list of titles that appears as tabs at the bottom
+* @param intervalSeconds the interval of auto scrolling, set to 2 in sample
+* @param animationMillis the scrolling's animation time, set to 500 in sample
+* @param int logoResourceId | Bitmap logoBitmap the logo you want to display.
+        You can skip this param if you don't want it.
+*/
+mDecentBanner.start(List<View> views, List<String> titles, int intervalSeconds,
+        int animationMillis[, int logoResourceId | Bitmap logoBitmap]);
+
+//The gradient cover in decent banner is present by default. You can turn it on/off by calling
+mDecentBanner.setGradientEnabled(boolean enabled);
+
+```
 
 * Note that when you want to show less than 3 views, you need to extend the views to be no less than three items. When you want to display 2 views, your titles param should contain 2 items and your views param should contain 4 items as ABAB
 
 * You can call the following two methods to start/stop auto scrolling.
 
-        mDecentBanner.startAutoPlay();
-        mDecentBanner.stopAutoPlay();
+```java
+mDecentBanner.startAutoPlay();
+mDecentBanner.stopAutoPlay();
+```
 
 ## License
 
