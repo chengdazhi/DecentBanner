@@ -54,10 +54,6 @@ Gradle
 */
 mDecentBanner.start(List<View> views, List<String> titles, int intervalSeconds,
         int animationMillis[, int logoResourceId | Bitmap logoBitmap]);
-
-//The gradient cover in decent banner is present by default. You can turn it on/off by calling
-mDecentBanner.setGradientEnabled(boolean enabled);
-
 ```
 
 * Note that when you want to show less than 3 views, you need to extend the views to be no less than three items. When you want to display 2 views, your titles param should contain 2 items and your views param should contain 4 items as ABAB
@@ -67,6 +63,10 @@ mDecentBanner.setGradientEnabled(boolean enabled);
 ```java
 mDecentBanner.startAutoPlay();
 mDecentBanner.stopAutoPlay();
+
+* You can call these method to enable/disable gradient cover or to query whether the cover is enabled
+mDecentBanner.setGradientEnabled(boolean enabled);
+mDecentBanner.isGradientEnabled();
 ```
 
 ## License
