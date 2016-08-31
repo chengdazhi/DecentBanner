@@ -63,8 +63,11 @@ mDecentBanner.start(List<View> views, List<String> titles, int intervalSeconds,
 ```java
 mDecentBanner.startAutoPlay();
 mDecentBanner.stopAutoPlay();
+```
 
 * You can call these method to enable/disable gradient cover or to query whether the cover is enabled
+
+```java
 mDecentBanner.setGradientEnabled(boolean enabled);
 mDecentBanner.isGradientEnabled();
 ```
